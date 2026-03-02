@@ -1,18 +1,24 @@
-# 🏆 Treinamento OBI — Olimpíada Brasileira de Informática
+<div align="center">
 
-Repositório de soluções e exercícios desenvolvidos durante o treinamento para a **OBI (Olimpíada Brasileira de Informática)**. As soluções estão organizadas por ano de edição e implementadas em **Python**.
+# 🏆 Treinamento OBI
+
+*Soluções e exercícios para a Olimpíada Brasileira de Informática*
+
+[![Language](https://img.shields.io/badge/Language-Python%203-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![OBI](https://img.shields.io/badge/Competição-OBI-00d4aa?style=flat-square)](https://olimpiada.ic.unicamp.br/)
+[![Edições](https://img.shields.io/badge/Edições-2019%20·%202021%20·%202023-FF6B6B?style=flat-square)]()
+
+</div>
 
 ---
 
-## 📌 O que é a OBI?
+Repositório de soluções desenvolvidas durante o treinamento para a **OBI (Olimpíada Brasileira de Informática)**, organizadas por edição e implementadas em **Python 3**.
 
-A **Olimpíada Brasileira de Informática (OBI)** é uma competição nacional voltada para estudantes do ensino fundamental e médio, com o objetivo de estimular o interesse pela computação e pela resolução de problemas algorítmicos. Os participantes resolvem problemas de programação que envolvem lógica, estruturas de dados, algoritmos e matemática computacional.
-
-Mais informações: [https://olimpiada.ic.unicamp.br/](https://olimpiada.ic.unicamp.br/)
+> A OBI é uma competição nacional para estudantes do ensino fundamental e médio, com foco em lógica, estruturas de dados, algoritmos e matemática computacional. Mais informações em [olimpiada.ic.unicamp.br](https://olimpiada.ic.unicamp.br/).
 
 ---
 
-## 📁 Estrutura do Repositório
+## 📂 Estrutura do Repositório
 
 ```
 Treinamento-OBI/
@@ -27,14 +33,13 @@ Treinamento-OBI/
 │   ├── cifra.py       # Problema da cifra
 │   ├── tempo.py       # Problema do tempo/registro de eventos
 │   └── test.py        # Testes e experimentos
-├── OBI-2023/
-│   ├── contas.py      # Problema das contas
-│   ├── estoque.py     # Problema do estoque
-│   ├── exec.py        # Comparação de desempenho (timeit)
-│   ├── leilao.py      # Problema do leilão
-│   ├── toupeira.py    # Problema da toupeira (WIP)
-│   └── test.py        # Testes e experimentos
-└── README.md
+└── OBI-2023/
+    ├── contas.py      # Problema das contas
+    ├── estoque.py     # Problema do estoque
+    ├── exec.py        # Comparação de desempenho (timeit)
+    ├── leilao.py      # Problema do leilão
+    ├── toupeira.py    # Problema da toupeira (WIP)
+    └── test.py        # Testes e experimentos
 ```
 
 ---
@@ -43,76 +48,59 @@ Treinamento-OBI/
 
 ### 📅 OBI 2019
 
-| Arquivo        | Problema                        | Descrição                                                                                         |
-|----------------|---------------------------------|---------------------------------------------------------------------------------------------------|
-| `idade.py`     | Idades                          | Dado um valor `m` e duas idades, calcula a terceira e retorna a maior das três.                   |
-| `soma.py`      | Soma de Subsequências           | Conta quantas subsequências contíguas de uma sequência somam exatamente `k` (força bruta O(n²)). |
-| `somaFODA.py`  | Soma de Subsequências (Alt.)    | Abordagem alternativa para contagem de subsequências com soma igual a `k`.                        |
-| `chuva.py`     | Chuva                           | Simulação de propagação em uma grade com regras de movimento baseadas em células vizinhas.        |
-| `c.py`         | Grade (WIP)                     | Leitura de uma grade n×m; lógica de verificação de condições (em desenvolvimento).               |
+| Arquivo | Problema | Descrição |
+|---------|----------|-----------|
+| `idade.py` | Idades | Dado `m` e duas idades, calcula a terceira e retorna a maior das três |
+| `soma.py` | Soma de Subsequências | Conta subsequências contíguas com soma igual a `k` — força bruta O(n²) |
+| `somaFODA.py` | Soma de Subsequências (Alt.) | Abordagem alternativa para o mesmo problema |
+| `chuva.py` | Chuva | Simulação de propagação em grade com regras de movimento por células vizinhas |
+| `c.py` | Grade *(WIP)* | Leitura de grade n×m com verificação de condições — em desenvolvimento |
 
 ---
 
 ### 📅 OBI 2021
 
-| Arquivo     | Problema     | Descrição                                                                                                          |
-|-------------|--------------|--------------------------------------------------------------------------------------------------------------------|
-| `cifra.py`  | Cifra        | Implementa uma cifra de substituição: consoantes são substituídas por blocos de 3 letras baseados no alfabeto.    |
-| `tempo.py`  | Tempo        | Gerencia registro de eventos (R = registrar, E = encerrar, T = avançar tempo) e imprime status final de cada item.|
+| Arquivo | Problema | Descrição |
+|---------|----------|-----------|
+| `cifra.py` | Cifra | Cifra de substituição: consoantes viram blocos de 3 letras baseados no alfabeto |
+| `tempo.py` | Tempo | Gerencia eventos (`R` registrar, `E` encerrar, `T` avançar tempo) e imprime status final |
 
 ---
 
 ### 📅 OBI 2023
 
-| Arquivo       | Problema   | Descrição                                                                                                        |
-|---------------|------------|------------------------------------------------------------------------------------------------------------------|
-| `contas.py`   | Contas     | Dado um valor `v` e três contas, paga o máximo de contas possível em ordem crescente de valor.                  |
-| `estoque.py`  | Estoque    | Gerencia pedidos em um estoque matricial; conta quantos pedidos foram atendidos com sucesso.                    |
-| `leilao.py`   | Leilão     | Lê lances de um leilão e determina o vencedor com o maior lance.                                                |
-| `toupeira.py` | Toupeira   | Problema em desenvolvimento.                                                                                    |
-| `exec.py`     | Benchmark  | Compara o tempo de execução entre ordenação de listas e dicionários usando `timeit`.                            |
+| Arquivo | Problema | Descrição |
+|---------|----------|-----------|
+| `contas.py` | Contas | Dado `v` e três contas, paga o máximo possível em ordem crescente de valor |
+| `estoque.py` | Estoque | Gerencia pedidos em estoque matricial e conta quantos foram atendidos |
+| `leilao.py` | Leilão | Lê lances e determina o vencedor com o maior lance |
+| `toupeira.py` | Toupeira *(WIP)* | Em desenvolvimento |
+| `exec.py` | Benchmark | Compara tempo de execução entre ordenação de listas e dicionários via `timeit` |
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
-
-- **Linguagem:** Python 3
-- **Paradigma:** Programação imperativa / algoritmos e estruturas de dados
-- **Ferramentas:** Python padrão (sem bibliotecas externas, exceto `timeit` em `exec.py`)
-
----
-
-## ▶️ Como Executar
-
-Certifique-se de ter o **Python 3** instalado em sua máquina.
+## 🚀 Como Executar
 
 ```bash
-# Clone o repositório
 git clone https://github.com/neuxxkk/Treinamento-OBI.git
 cd Treinamento-OBI
-
-# Execute um arquivo específico (exemplo)
 python3 OBI-2023/contas.py
 ```
 
-A maioria dos programas lê dados via entrada padrão (`stdin`). Você pode fornecer a entrada diretamente no terminal ou redirecionar um arquivo de entrada:
+A maioria dos programas lê via `stdin`. Você pode fornecer a entrada diretamente ou redirecionar um arquivo:
 
 ```bash
-# Exemplo com redirecionamento de arquivo
+# Entrada direta
 echo "100\n30\n40" | python3 OBI-2023/contas.py
 
-# Ou usando um arquivo de entrada
+# Via arquivo
 python3 OBI-2023/contas.py < entrada.txt
 ```
 
----
-
-## 👤 Autor
-
-Desenvolvido por **[neuxxkk](https://github.com/neuxxkk)** como material de estudo e prática para a Olimpíada Brasileira de Informática.
+> Nenhuma biblioteca externa é necessária — apenas Python 3 padrão (exceto `timeit` em `exec.py`, que já vem na stdlib).
 
 ---
 
-## 📄 Licença
-
-Este repositório é de uso pessoal e educacional. Sinta-se à vontade para explorar e se inspirar nas soluções.
+<div align="center">
+<sub>Desenvolvido por <a href="https://github.com/neuxxkk">neuxxkk</a> como material de estudo para a OBI · uso pessoal e educacional</sub>
+</div>
